@@ -33,7 +33,7 @@ class RegistrySpider(Spider):
     allowed_domains = ['freedns.afraid.org']
     base_url = 'http://freedns.afraid.org/domain/registry/'
     start_urls = [base_url]
-    requests_made = True
+    requests_made = False
 
     def parse(self, response):
         """
